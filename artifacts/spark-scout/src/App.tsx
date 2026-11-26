@@ -11,7 +11,7 @@ import {
   PencilRuler, Puzzle, RotateCcw, Search, ShieldCheck, Sparkles, SpellCheck,
   Sprout, Users, Wifi, Wrench,
 } from 'lucide-react';
-import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
+import { Link, useLocation, Router as WouterRouter } from 'wouter';
 
 const queryClient = new QueryClient();
 
@@ -234,7 +234,7 @@ const stepCopy = [
   { title: 'Which areas match the student’s interests?', text: 'Select all applicable areas. These choices help rank the recommendations.' },
   { title: 'Which participation format do they prefer?', text: 'Indicate whether the student prefers individual, team, or either type of participation.' },
   { title: 'What level of challenge do they prefer?', text: 'Choose a level that reflects the student’s current interests and experience.' },
-  { title: 'Select a program format and optional location', text: 'Choose online or in-person programs. A city or ZIP code provides context for local guidance; nearby events are not verified.' },
+  { title: 'Select a program format and optional location', text: 'Choose online or in-person programs. A city or ZIP code appears only in in-person details; no nearby events are searched.' },
 ];
 
 const quizSteps = 5;
@@ -243,6 +243,7 @@ type Challenge = 'steady' | 'balanced' | 'stretch';
 type FormatPreference = 'any' | 'in-person' | 'online';
 
 function App() {
+  const [pathname, navigate] = useLocation();
   const [step, setStep] = useState(0);
   const [complete, setComplete] = useState(false);
   const [age, setAge] = useState(12);
@@ -294,7 +295,7 @@ function App() {
       setComplete(true);
       setStep(quizSteps);
       setAnnouncement(`Your recommendations are ready. ${scored.length} opportunities to explore.`);
-      window.setTimeout(() => document.getElementById('recommendations')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+      navigate('/contests');
     }
   };
   const back = () => {
@@ -314,11 +315,13 @@ function App() {
     setSearch('');
     setExpanded(null);
     setAnnouncement('Quiz restarted. Your previous answers have been cleared from this page.');
+    navigate('/');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   const editAnswers = () => {
     setComplete(false);
     setStep(0);
+    navigate('/');
     setAnnouncement('Edit your answers. Current choices are kept in this browser session only.');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -326,14 +329,20 @@ function App() {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <a className="brand" href="/" aria-label="SparkScout home" data-testid="link-brand-home">
-          <span className="brand-mark"><Sprout size={20} strokeWidth={2.2} /></span>
-          <span className="brand-name">SparkScout</span>
+        <Link className="brand" href="/" aria-label="ZipContest home" data-testid="link-brand-home">
+          <span className="brand-mark"><MapPin size={20} strokeWidth={2.2} /></span>
+          <span className="brand-name">ZipContest</span>
           <span className="brand-tag">Youth competition finder</span>
-        </a>
-          <div className="header-note"><ShieldCheck size={15} /><span>Responses are not stored</span></div>
+        </Link>
+        <div className="header-note"><ShieldCheck size={15} /><span>Answers stay in this session</span></div>
       </header>
+      <nav className="primary-nav" aria-label="Main navigation" data-testid="nav-main">
+        <Link href="/" className={`nav-link${pathname === '/' ? ' active' : ''}`} aria-current={pathname === '/' ? 'page' : undefined} data-testid="link-nav-quiz">Quiz</Link>
+        <Link href="/contests" className={`nav-link${pathname === '/contests' ? ' active' : ''}`} aria-current={pathname === '/contests' ? 'page' : undefined} data-testid="link-nav-contests">Contests</Link>
+        <Link href="/info" className={`nav-link${pathname === '/info' ? ' active' : ''}`} aria-current={pathname === '/info' ? 'page' : undefined} data-testid="link-nav-info">ZIP Code Info</Link>
+      </nav>
       <main className="page-wrap">
+        {pathname === '/' && <>
         <section className="hero" aria-labelledby="hero-title">
           <div className="hero-copy">
             <div className="eyebrow">Personalized youth competition recommendations</div>
@@ -343,6 +352,13 @@ function App() {
           <div className="hero-stamp" aria-hidden="true"><span>Matched to<br />your interests</span></div>
         </section>
 
+        {complete && <section className="quiz-panel completed-quiz-panel" data-testid="notice-quiz-complete">
+          <div className="step-kicker">Your answers are ready</div>
+          <h2>Explore your personalized recommendations.</h2>
+          <p>Your quiz answers are still here. You can revisit the recommendations or change your preferences.</p>
+          <Link href="/contests" className="btn btn-primary" data-testid="link-view-recommendations">View recommendations <ArrowRight size={15} /></Link>
+          <button type="button" className="btn btn-quiet" onClick={editAnswers} data-testid="button-edit-quiz">Edit answers</button>
+        </section>}
         {!complete && <section className="quiz-panel" aria-labelledby="quiz-title">
           <div className="panel-head">
             <div>
@@ -427,6 +443,7 @@ function App() {
               <input id="location-input" className="text-input" type="text" maxLength={70} autoComplete="off" value={location} placeholder="For example, 94103 or Austin, TX" onChange={(event) => setLocation(event.target.value)} data-testid="input-location" />
             </div>
             <div className="privacy-note"><LockKeyhole size={13} />Used only on this page for local context. Not stored or transmitted.</div>
+            <Link href="/info" className="inline-info-link" data-testid="link-zip-info">What happens to this information?</Link>
           </div>}
 
           <div className="quiz-actions">
@@ -436,10 +453,11 @@ function App() {
             </button>
           </div>
         </section>}
+        </>}
 
         <div role="status" aria-live="polite" className="sr-only" data-testid="status-announcement">{announcement}</div>
 
-        {complete && <section id="recommendations" className="results" aria-labelledby="results-heading">
+        {pathname === '/contests' && (complete ? <section id="recommendations" className="results" aria-labelledby="results-heading">
           <div className="results-top">
             <div>
               <div className="step-kicker">Recommendations ranked by age, interests, and preferences</div>
@@ -509,16 +527,42 @@ function App() {
             <span style={{ color: '#77877d', fontSize: 11 }}>Your answers and location are not saved or transmitted.</span>
             <button type="button" className="btn btn-quiet" onClick={reset} data-testid="button-restart-quiz"><RotateCcw size={14} />Start over</button>
           </div>
+        </section> : <section className="quiz-panel incomplete-panel" aria-labelledby="incomplete-heading" data-testid="notice-quiz-incomplete">
+          <div className="step-kicker">Recommendations begin with your preferences</div>
+          <h2 id="incomplete-heading">First, tell us what you’re looking for.</h2>
+          <p>Complete the short age-and-interest quiz to see recurring programs ranked for your student.</p>
+          <Link href="/" className="btn btn-primary" data-testid="link-complete-quiz">Complete the quiz <ArrowRight size={15} /></Link>
+        </section>)}
+
+        {pathname === '/info' && <section className="quiz-panel info-panel" aria-labelledby="info-title" data-testid="page-zip-info">
+          <div className="step-kicker">Clear by design</div>
+          <h1 id="info-title">What your ZIP code does — and doesn’t do</h1>
+          <p className="info-lead">The optional city or ZIP field adds context to program details. It is not a location search.</p>
+          <div className="info-block">
+            <h2>Only in this open page</h2>
+            <p>The value exists only in client-side React state while this page is open. It is not persisted or transmitted. Closing or refreshing the page clears it.</p>
+          </div>
+          <div className="info-block">
+            <h2>No geocoding or nearby search</h2>
+            <p>ZipContest does not geocode the value, call a location or event service, rank or filter by distance, or find live nearby events.</p>
+          </div>
+          <div className="info-block">
+            <h2>How it is currently used</h2>
+            <p>If provided, the value is appended only to in-person program detail text to clarify that a venue has not been verified and to direct families to the organizer’s official page. The directory is a set of recurring programs, not live local event listings.</p>
+          </div>
+          <div className="note-banner"><ShieldCheck size={17} /><div><strong>Confirm details with the organizer.</strong> Schedules, eligibility, local availability, deadlines, and costs can change. A parent or guardian should check the official program page.</div></div>
+          <Link href="/" className="btn btn-primary" data-testid="link-info-to-quiz">Back to the quiz <ArrowRight size={15} /></Link>
         </section>}
 
-        <p className="footer-note">SparkScout provides program information, not an eligibility determination or live local event listings. Review each organizer’s official information with a parent or guardian before making plans.</p>
+        {!['/', '/contests', '/info'].includes(pathname) && <section className="quiz-panel not-found-panel"><NotFound /></section>}
+        <p className="footer-note">ZipContest provides program information, not an eligibility determination or live local event listings. Review each organizer’s official information with a parent or guardian before making plans.</p>
       </main>
     </div>
   );
 }
 
 function Router() {
-  return <RoutedErrorBoundary><Switch><Route path="/" component={App} /><Route component={NotFound} /></Switch></RoutedErrorBoundary>;
+  return <RoutedErrorBoundary><App /></RoutedErrorBoundary>;
 }
 
 function RoutedErrorBoundary({ children }: { children: ReactNode }) {
