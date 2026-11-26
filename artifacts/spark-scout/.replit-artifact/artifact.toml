@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "SparkScout"
+description = "An age- and interest-aware guide that helps U.S. kids and teens discover online competitions and local in-person opportunities, with clear eligibility details and official organizer links."
+version = "1.0.0"
+id = "artifacts/spark-scout"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18968
+
+[services.development]
+run = "pnpm --filter @workspace/spark-scout run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/spark-scout", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/spark-scout/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18968"
+BASE_PATH = "/"
