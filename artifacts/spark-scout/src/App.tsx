@@ -45,7 +45,7 @@ const opportunities: Opportunity[] = [
     interests: ['STEM & robotics', 'Coding & technology', 'Teamwork & creative problem-solving'],
     format: 'in-person',
     summary: 'A team-based robotics program where young people design, build, and program a LEGO robot, then explore a real-world theme.',
-    matchReason: 'A welcoming way to combine hands-on engineering, coding, and shared problem-solving.',
+    matchReason: 'Combines hands-on engineering, coding, and collaborative problem-solving.',
     localGuidance: 'Teams and events are organized through local partners. Use FIRST’s program page to explore participation options; this finder does not verify nearby teams.',
     eligibilityNote: 'FIRST LEGO League divisions have distinct age and grade bands. Confirm the division and team rules for your area.',
     seasonNote: 'Recurring annual program; season themes, event calendars, costs, and registration windows change.',
@@ -60,7 +60,7 @@ const opportunities: Opportunity[] = [
     interests: ['STEM & robotics', 'Coding & technology', 'Teamwork & creative problem-solving'],
     format: 'in-person',
     summary: 'Students work in teams to design, build, and program robots for a new game challenge, then compete and share engineering ideas.',
-    matchReason: 'A deeper robotics build for someone ready to collaborate on a larger engineering challenge.',
+    matchReason: 'Offers an advanced team robotics project involving engineering and programming.',
     localGuidance: 'Teams and competitions are hosted by local FIRST partners. Browse the official program information and ask about teams in your community.',
     eligibilityNote: 'Age and grade eligibility can vary by division and region. Check current FIRST rules before joining.',
     seasonNote: 'Recurring annual season; challenge details, dates, team costs, and availability change.',
@@ -74,8 +74,8 @@ const opportunities: Opportunity[] = [
     ageRange: [11, 14], gradeRange: 'Middle school, typically grades 6–8',
     interests: ['Math & puzzles', 'Teamwork & creative problem-solving'],
     format: 'in-person',
-    summary: 'A middle-school math program with team preparation and friendly individual and team competition rounds.',
-    matchReason: 'Great for a young math thinker who enjoys clever problems and a little competitive energy.',
+    summary: 'A middle-school math program with team preparation and individual and team competition rounds.',
+    matchReason: 'Includes mathematical problem-solving in both individual and team formats.',
     localGuidance: 'Participation is generally through a school or local chapter. The official site explains chapter participation and competition pathways.',
     eligibilityNote: 'Designed for middle-school students; confirm grade, school participation, and chapter rules with MATHCOUNTS.',
     seasonNote: 'Recurring school-year series; chapter schedules, fees, and qualification rules can change.',
@@ -90,7 +90,7 @@ const opportunities: Opportunity[] = [
     interests: ['STEM & robotics', 'Math & puzzles', 'Teamwork & creative problem-solving'],
     format: 'in-person',
     summary: 'A team competition with a wide mix of science and engineering events, from building and lab work to knowledge challenges.',
-    matchReason: 'There are many event styles, so students can explore different corners of science together.',
+    matchReason: 'Offers a range of science and engineering events for students with different interests.',
     localGuidance: 'Teams compete through state organizations and local tournaments. Use the official state-organizations directory; no nearby event is implied.',
     eligibilityNote: 'Division eligibility depends on grade and the event rules. Confirm team and event requirements with your state organization.',
     seasonNote: 'Recurring annual tournament season; event lists, schedules, fees, and local availability change.',
@@ -105,7 +105,7 @@ const opportunities: Opportunity[] = [
     interests: ['Writing & history', 'Art & design', 'Speaking & spelling'],
     format: 'both',
     summary: 'Students investigate a historical topic and present their work as a paper, exhibit, documentary, website, or performance.',
-    matchReason: 'A strong fit for turning curiosity about the past into a researched, creative project.',
+    matchReason: 'Combines historical research with a choice of creative presentation formats.',
     localGuidance: 'Most students participate through a school or affiliated program and progress through regional and state contests. Check the official affiliate directory.',
     eligibilityNote: 'Junior and senior divisions are grade-based. Confirm project format and participation rules with the local affiliate.',
     seasonNote: 'Recurring annual theme and contest cycle; deadlines and affiliate availability vary.',
@@ -120,7 +120,7 @@ const opportunities: Opportunity[] = [
     interests: ['Writing & history', 'Art & design'],
     format: 'online',
     summary: 'A national recognition program for original student work across many visual-art and writing categories.',
-    matchReason: 'A place to share a piece of writing or art and explore a broad range of creative categories.',
+    matchReason: 'Recognizes original work across a broad range of visual-art and writing categories.',
     localGuidance: 'Entries are submitted online; regional affiliates review work and recognition may include regional and national levels.',
     eligibilityNote: 'Eligibility includes grade, age, and enrollment criteria. Review the current rules and region-specific categories before submitting.',
     seasonNote: 'Recurring annual awards cycle; regional deadlines, entry fees, and categories may change.',
@@ -135,7 +135,7 @@ const opportunities: Opportunity[] = [
     interests: ['Coding & technology', 'STEM & robotics', 'Teamwork & creative problem-solving'],
     format: 'online',
     summary: 'Students create an original app or computer program and submit a demonstration for their participating congressional district.',
-    matchReason: 'A practical coding project that invites students to build something connected to an idea they care about.',
+    matchReason: 'Provides an opportunity to create an app or program for a participating congressional district.',
     localGuidance: 'Submissions are online, but participation depends on a member of Congress opting into the challenge for that district. Check district availability on the official site.',
     eligibilityNote: 'District and student eligibility requirements apply. Review current rules and allowed team sizes before starting.',
     seasonNote: 'Recurring annual challenge; participating districts, deadlines, and rules are set for each cycle.',
@@ -150,7 +150,7 @@ const opportunities: Opportunity[] = [
     interests: ['STEM & robotics', 'Math & puzzles', 'Teamwork & creative problem-solving'],
     format: 'online',
     summary: 'Student teams use scientific inquiry or engineering design to investigate a community problem and submit a project online.',
-    matchReason: 'A guided team project for students who like asking questions and applying STEM to everyday life.',
+    matchReason: 'Applies scientific inquiry or engineering design to a community issue.',
     localGuidance: 'Teams work on projects and submit online; any program events or supports are described by the organizer.',
     eligibilityNote: 'Grade, team composition, and adult advisor requirements apply. Confirm current eligibility on the official site.',
     seasonNote: 'Recurring annual program; registration windows, awards, and current rules can change.',
@@ -165,7 +165,7 @@ const opportunities: Opportunity[] = [
     interests: ['Teamwork & creative problem-solving', 'Art & design', 'STEM & robotics'],
     format: 'both',
     summary: 'Teams tackle open-ended STEAM challenges that may involve engineering, storytelling, performance, or service learning.',
-    matchReason: 'A flexible creative challenge where collaboration and original approaches matter.',
+    matchReason: 'Emphasizes collaborative problem-solving across open-ended STEAM challenges.',
     localGuidance: 'Teams and tournaments are supported by state and regional affiliates. Check the official affiliate directory for local pathways.',
     eligibilityNote: 'Program levels and team rules depend on grade and current challenge rules; teams need an adult team manager.',
     seasonNote: 'Recurring annual challenge cycle; challenge details, local events, costs, and deadlines vary.',
@@ -180,7 +180,7 @@ const opportunities: Opportunity[] = [
     interests: ['Speaking & spelling', 'Writing & history'],
     format: 'both',
     summary: 'A spelling competition pathway that typically begins through an enrolled school or local spelling bee program.',
-    matchReason: 'A good fit for word lovers who enjoy learning language and building confidence on stage.',
+    matchReason: 'Offers a school- and local-level pathway for spelling competition.',
     localGuidance: 'School and local bee participation depends on organizer enrollment. Use the official participation information to explore the pathway in your area.',
     eligibilityNote: 'Age, grade, school, and prior participation restrictions apply. Check the current handbook and eligibility rules.',
     seasonNote: 'Recurring annual bee; school enrollment, local schedules, and advancement rules can change.',
@@ -195,7 +195,7 @@ const opportunities: Opportunity[] = [
     interests: ['Coding & technology', 'STEM & robotics', 'Teamwork & creative problem-solving'],
     format: 'online',
     summary: 'A youth technology entrepreneurship program in which participants identify a problem and develop an app or AI-based solution.',
-    matchReason: 'Connects coding with research, design, and pitching a solution to a real-world need.',
+    matchReason: 'Combines coding, research, and entrepreneurship to develop an app-based solution.',
     localGuidance: 'Program materials and submissions are online; mentoring and community opportunities depend on the current program cycle.',
     eligibilityNote: 'The organizer’s named program is designed for girls and young women; review current inclusion, age, team, and regional eligibility rules. Everyone can explore the official program details.',
     seasonNote: 'Recurring program cycle; categories, registration, mentorship, and deadlines can change.',
@@ -210,7 +210,7 @@ const opportunities: Opportunity[] = [
     interests: ['Coding & technology', 'Math & puzzles'],
     format: 'online',
     summary: 'A programming competition with online contests and a progression of increasingly challenging algorithmic problems.',
-    matchReason: 'A focused option for someone who enjoys coding puzzles and wants to stretch their problem-solving skills.',
+    matchReason: 'Features online programming contests focused on algorithms and problem-solving.',
     localGuidance: 'Contests are online. Review the official site for participation, contest format, and current qualification information.',
     eligibilityNote: 'Eligibility and advancement rules are defined by USACO and may depend on age, school status, or other criteria. Confirm before participating.',
     seasonNote: 'Recurring contest seasons; contest windows, rules, and qualification criteria can change.',
@@ -220,21 +220,21 @@ const opportunities: Opportunity[] = [
 ];
 
 const interestOptions: { value: Interest; hint: string; Icon: typeof Atom }[] = [
-  { value: 'STEM & robotics', hint: 'Build, test, invent', Icon: Atom },
-  { value: 'Math & puzzles', hint: 'Patterns and brainteasers', Icon: Brain },
-  { value: 'Writing & history', hint: 'Stories, research, ideas', Icon: BookOpen },
-  { value: 'Art & design', hint: 'Make things your way', Icon: Palette },
-  { value: 'Coding & technology', hint: 'Code and create', Icon: Code2 },
-  { value: 'Speaking & spelling', hint: 'Words and presenting', Icon: SpellCheck },
-  { value: 'Teamwork & creative problem-solving', hint: 'Solve it together', Icon: Users },
+  { value: 'STEM & robotics', hint: 'Engineering and robotics', Icon: Atom },
+  { value: 'Math & puzzles', hint: 'Mathematical reasoning', Icon: Brain },
+  { value: 'Writing & history', hint: 'Writing and historical research', Icon: BookOpen },
+  { value: 'Art & design', hint: 'Visual art and design', Icon: Palette },
+  { value: 'Coding & technology', hint: 'Programming and technology', Icon: Code2 },
+  { value: 'Speaking & spelling', hint: 'Language and public speaking', Icon: SpellCheck },
+  { value: 'Teamwork & creative problem-solving', hint: 'Collaborative problem-solving', Icon: Users },
 ];
 
 const stepCopy = [
-  { title: 'How old is your young explorer?', text: 'This helps us surface programs with age and grade guidance that may fit.' },
-  { title: 'What sparks their curiosity?', text: 'Choose any that feel right. These are starting points, not labels.' },
-  { title: 'How do they like to take part?', text: 'Some programs are built around teams; others make room for individual entries.' },
-  { title: 'What kind of challenge sounds fun?', text: 'There is no wrong answer. We will use this as a gentle nudge, not a limit.' },
-  { title: 'A little context for the search', text: 'Choose a format and optionally share a city or ZIP to help frame local guidance.' },
+  { title: 'What is the student’s age?', text: 'Age helps identify programs with potentially relevant age and grade requirements.' },
+  { title: 'Which areas match the student’s interests?', text: 'Select all applicable areas. These choices help rank the recommendations.' },
+  { title: 'Which participation format do they prefer?', text: 'Indicate whether the student prefers individual, team, or either type of participation.' },
+  { title: 'What level of challenge do they prefer?', text: 'Choose a level that reflects the student’s current interests and experience.' },
+  { title: 'Select a program format and optional location', text: 'Choose online or in-person programs. A city or ZIP code provides context for local guidance; nearby events are not verified.' },
 ];
 
 const quizSteps = 5;
@@ -270,7 +270,7 @@ function App() {
         (challenge === 'stretch' && op.challenge === 'stretch') ||
         (challenge === 'steady' && op.challenge === 'steady') ? 1 : 0;
       const reason = fallback
-        ? `A popular starting point for ages ${op.ageRange[0]}–${op.ageRange[1]}; explore its format and eligibility to see if it feels right.`
+        ? `The listed age range of ${op.ageRange[0]}–${op.ageRange[1]} includes this age. Confirm exact grade eligibility and current requirements with the organizer.`
         : `Connects with ${interestMatches.join(', ')}${participation !== 'either' && op.participation === participation ? ` and offers a ${participation}-friendly format` : ''}. ${op.matchReason}`;
       return { opportunity: op, score: interestScore + preferenceScore + participationScore + challengeScore, reason, fallback };
     }).sort((a, b) => b.score - a.score || a.opportunity.title.localeCompare(b.opportunity.title));
@@ -329,24 +329,24 @@ function App() {
         <a className="brand" href="/" aria-label="SparkScout home" data-testid="link-brand-home">
           <span className="brand-mark"><Sprout size={20} strokeWidth={2.2} /></span>
           <span className="brand-name">SparkScout</span>
-          <span className="brand-tag">find the next thing</span>
+          <span className="brand-tag">Youth competition finder</span>
         </a>
-        <div className="header-note"><ShieldCheck size={15} /><span>Your answers stay on this page</span></div>
+          <div className="header-note"><ShieldCheck size={15} /><span>Responses are not stored</span></div>
       </header>
       <main className="page-wrap">
         <section className="hero" aria-labelledby="hero-title">
           <div className="hero-copy">
-            <div className="eyebrow">A little curiosity goes a long way</div>
-            <h1 id="hero-title">Find a place for<br />that bright spark.</h1>
-            <p>Tell us what a young person enjoys. We’ll point you toward recurring programs and competitions to explore together.</p>
+            <div className="eyebrow">Personalized youth competition recommendations</div>
+            <h1 id="hero-title">Find competitions<br />that match your interests.</h1>
+            <p>Complete a short questionnaire about age, interests, and preferred participation format to review recurring youth competitions and programs.</p>
           </div>
-          <div className="hero-stamp" aria-hidden="true"><span>Made for<br />what’s next</span></div>
+          <div className="hero-stamp" aria-hidden="true"><span>Matched to<br />your interests</span></div>
         </section>
 
         {!complete && <section className="quiz-panel" aria-labelledby="quiz-title">
           <div className="panel-head">
             <div>
-              <div className="step-kicker">Your quick-start guide</div>
+              <div className="step-kicker">Interest and participation questionnaire</div>
               <h2 id="quiz-title">{stepCopy[step]?.title}</h2>
               <p>{stepCopy[step]?.text}</p>
             </div>
@@ -366,11 +366,11 @@ function App() {
                 <span className="age-bound">18</span>
               </div>
             </div>
-            <p className="age-note">We use age as a rough guide. Program grade requirements may differ.</p>
+            <p className="age-note">Age ranges are estimates. Many programs determine eligibility by grade or division.</p>
           </div>}
 
           {step === 1 && <div>
-            <div className="field-label" id="interest-label">Pick anything that sounds like them</div>
+            <div className="field-label" id="interest-label">Select all areas of interest</div>
             <div className="choice-grid interests" role="group" aria-labelledby="interest-label">
               {interestOptions.map(({ value, hint, Icon }) => <button
                 type="button" className="choice" key={value} aria-pressed={interests.includes(value)}
@@ -381,16 +381,16 @@ function App() {
                 {interests.includes(value) && <Check size={16} aria-hidden="true" />}
               </button>)}
             </div>
-            <p className="privacy-note"><Heart size={13} />You can choose several—or none. We won’t use these to label anyone.</p>
+            <p className="privacy-note"><Heart size={13} />Select multiple areas, or continue without a selection.</p>
           </div>}
 
           {step === 2 && <div>
-            <div className="field-label" id="participation-label">They might enjoy…</div>
+            <div className="field-label" id="participation-label">Preferred participation format</div>
             <div className="choice-grid" role="group" aria-labelledby="participation-label">
               {[
-                { id: 'solo' as const, title: 'Doing their own thing', hint: 'Individual projects or contests', Icon: PencilRuler },
-                { id: 'team' as const, title: 'Making it happen together', hint: 'A team, club, or shared challenge', Icon: Users },
-                { id: 'either' as const, title: 'A bit of both', hint: 'Open to either kind of experience', Icon: Sparkles },
+                { id: 'solo' as const, title: 'Individual participation', hint: 'Individual projects or competitions', Icon: PencilRuler },
+                { id: 'team' as const, title: 'Team participation', hint: 'School, club, or local team', Icon: Users },
+                { id: 'either' as const, title: 'Either format', hint: 'Individual or team opportunities', Icon: Sparkles },
               ].map(({ id, title, hint, Icon }) => <button key={id} type="button" className="choice" aria-pressed={participation === id} onClick={() => setParticipation(id)} data-testid={`select-participation-${id}`}>
                 <span className="choice-icon"><Icon size={17} /></span><span><strong>{title}</strong><small>{hint}</small></span>
               </button>)}
@@ -398,12 +398,12 @@ function App() {
           </div>}
 
           {step === 3 && <div>
-            <div className="field-label" id="challenge-label">A challenge that feels…</div>
+            <div className="field-label" id="challenge-label">Preferred challenge level</div>
             <div className="choice-grid" role="group" aria-labelledby="challenge-label">
               {[
-                { id: 'steady' as const, title: 'Comfortably curious', hint: 'Room to learn as they go', Icon: Lightbulb },
-                { id: 'balanced' as const, title: 'A good stretch', hint: 'Something new, with support', Icon: Puzzle },
-                { id: 'stretch' as const, title: 'Bring on the challenge', hint: 'Ready to dig in and go further', Icon: Wrench },
+                { id: 'steady' as const, title: 'Introductory', hint: 'Room to learn new skills', Icon: Lightbulb },
+                { id: 'balanced' as const, title: 'Moderate', hint: 'A guided step beyond familiar topics', Icon: Puzzle },
+                { id: 'stretch' as const, title: 'Advanced', hint: 'A demanding, in-depth challenge', Icon: Wrench },
               ].map(({ id, title, hint, Icon }) => <button key={id} type="button" className="choice" aria-pressed={challenge === id} onClick={() => setChallenge(id)} data-testid={`select-challenge-${id}`}>
                 <span className="choice-icon"><Icon size={17} /></span><span><strong>{title}</strong><small>{hint}</small></span>
               </button>)}
@@ -411,28 +411,28 @@ function App() {
           </div>}
 
           {step === 4 && <div>
-            <div className="field-label" id="format-label">Preferred way to join in</div>
+            <div className="field-label" id="format-label">Preferred program format</div>
             <div className="choice-grid" role="group" aria-labelledby="format-label">
               {[
-                { id: 'any' as const, title: 'Show me a mix', hint: 'Online and in-person', Icon: Sparkles },
-                { id: 'in-person' as const, title: 'In person', hint: 'Explore local participation', Icon: MapPin },
-                { id: 'online' as const, title: 'Online', hint: 'Join or submit online', Icon: Wifi },
+                { id: 'any' as const, title: 'Online and in person', hint: 'Include both program formats', Icon: Sparkles },
+                { id: 'in-person' as const, title: 'In person', hint: 'Explore local participation options', Icon: MapPin },
+                { id: 'online' as const, title: 'Online', hint: 'Participate or submit online', Icon: Wifi },
               ].map(({ id, title, hint, Icon }) => <button key={id} type="button" className="choice" aria-pressed={formatPreference === id} onClick={() => setFormatPreference(id)} data-testid={`select-format-${id}`}>
                 <span className="choice-icon"><Icon size={17} /></span><span><strong>{title}</strong><small>{hint}</small></span>
               </button>)}
             </div>
-            <label className="field-label" htmlFor="location-input" style={{ marginTop: 24 }}>City or ZIP <span style={{ fontWeight: 400, color: '#879188' }}>(optional)</span></label>
+            <label className="field-label" htmlFor="location-input" style={{ marginTop: 24 }}>City or ZIP code <span style={{ fontWeight: 400, color: '#879188' }}>(optional)</span></label>
             <div className="text-input-wrap">
               <MapPin size={17} />
               <input id="location-input" className="text-input" type="text" maxLength={70} autoComplete="off" value={location} placeholder="For example, 94103 or Austin, TX" onChange={(event) => setLocation(event.target.value)} data-testid="input-location" />
             </div>
-            <div className="privacy-note"><LockKeyhole size={13} />Only used on this page to frame local guidance. Never saved or sent anywhere.</div>
+            <div className="privacy-note"><LockKeyhole size={13} />Used only on this page for local context. Not stored or transmitted.</div>
           </div>}
 
           <div className="quiz-actions">
             <button type="button" className="btn btn-quiet" onClick={back} disabled={step === 0} data-testid="button-quiz-back"><ArrowLeft size={15} />Back</button>
             <button type="button" className="btn btn-primary" onClick={next} data-testid={step === quizSteps - 1 ? 'button-show-matches' : 'button-quiz-next'}>
-              {step === quizSteps - 1 ? 'See what’s out there' : 'Keep going'}<ArrowRight size={15} />
+              {step === quizSteps - 1 ? 'View recommendations' : 'Continue'}<ArrowRight size={15} />
             </button>
           </div>
         </section>}
@@ -442,8 +442,8 @@ function App() {
         {complete && <section id="recommendations" className="results" aria-labelledby="results-heading">
           <div className="results-top">
             <div>
-              <div className="step-kicker">A shortlist to explore{location.trim() ? ` · ${location.trim()}` : ''}</div>
-              <div className="results-title"><h2 id="results-heading">A few sparks to follow.</h2><span className="result-count" data-testid="text-result-count">{filtered.length}</span></div>
+              <div className="step-kicker">Recommendations ranked by age, interests, and preferences</div>
+              <div className="results-title"><h2 id="results-heading">Recommended opportunities</h2><span className="result-count" data-testid="text-result-count">{filtered.length}</span></div>
             </div>
             <button type="button" className="btn btn-quiet" onClick={editAnswers} data-testid="button-edit-answers"><PencilRuler size={15} />Edit answers</button>
           </div>
@@ -456,19 +456,19 @@ function App() {
             <label className="search-box">
               <Search size={15} />
               <span className="sr-only">Search opportunities</span>
-              <input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search the shortlist" data-testid="input-search-opportunities" />
+              <input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search recommendations" data-testid="input-search-opportunities" />
             </label>
           </div>
 
           {ageEligible.length === 0 ? <div className="empty-state" data-testid="empty-state-age">
             <div className="empty-icon"><Sprout size={21} /></div>
-            <h3>No age-guided suggestions just yet</h3>
-            <p>Our recurring-program catalogue doesn’t currently list an age range that includes {age}. Try editing the age to see age-guided suggestions. You can also explore the official program sites linked from any recommendation.</p>
+            <h3>No programs match the selected age</h3>
+            <p>The directory does not currently include programs with listed age ranges that match age {age}. Edit the age to review other programs. Exact eligibility may also depend on grade and organizer rules.</p>
             <button type="button" className="btn btn-quiet" onClick={() => setFilter('all')} data-testid="button-reset-filter">Show all formats</button>
           </div> : filtered.length === 0 ? <div className="empty-state" data-testid="empty-state-search">
             <div className="empty-icon"><Search size={20} /></div>
-            <h3>No matches in this view</h3>
-            <p>Try a different search or format. There are no live local listings here, just recurring programs to explore.</p>
+            <h3>No opportunities match these filters</h3>
+            <p>Try different search terms or a different format. This directory lists recurring programs, not current local events.</p>
             <button type="button" className="btn btn-quiet" onClick={() => { setSearch(''); setFilter('all'); }} data-testid="button-clear-search">Clear search and filters</button>
           </div> : <div className="opportunity-grid" aria-live="polite" data-testid="list-recommendations">
             {filtered.map(({ opportunity: op, reason, fallback }) => {
@@ -483,7 +483,7 @@ function App() {
                 <h3>{op.title}</h3>
                 <div className="age-meta">{op.ageRange[0]}–{op.ageRange[1]} yrs · {op.gradeRange}</div>
                 <p className="op-summary">{op.summary}</p>
-                <div className="match-note" data-testid={`reason-match-${op.id}`}><strong>{fallback ? 'A popular starting point' : 'Why it surfaced'} </strong>{reason}</div>
+                 <div className="match-note" data-testid={`reason-match-${op.id}`}><strong>{fallback ? 'Age-range suggestion' : 'Why this matches'} </strong>{reason}</div>
                 <div className="card-bottom">
                   <div className="tag-list">{op.tags?.map((tag) => <span key={tag} className="tag">{tag}</span>)}</div>
                   <button type="button" className="details-button" aria-expanded={open} aria-controls={`details-${op.id}`} onClick={() => { setExpanded(open ? null : op.id); setAnnouncement(`${op.title} details ${open ? 'closed' : 'opened'}.`); }} data-testid={`button-details-${op.id}`}>
@@ -506,12 +506,12 @@ function App() {
             <div><strong>Recurring programs, not live local listings.</strong> These national opportunities repeat, but this page does not confirm nearby venues, dates, deadlines, or open registration. Schedules and eligibility can change. A parent or guardian should confirm exact grade, local chapter availability, costs, deadlines, supervision, and current rules on each organizer’s official site.</div>
           </div>}
           <div className="results-top" style={{ marginTop: 20 }}>
-            <span style={{ color: '#77877d', fontSize: 11 }}>Your answers and location are kept only in temporary page state.</span>
+            <span style={{ color: '#77877d', fontSize: 11 }}>Your answers and location are not saved or transmitted.</span>
             <button type="button" className="btn btn-quiet" onClick={reset} data-testid="button-restart-quiz"><RotateCcw size={14} />Start over</button>
           </div>
         </section>}
 
-        <p className="footer-note">SparkScout is a starting point for discovery, not an eligibility check. Explore official organizer information with a parent or guardian before making plans.</p>
+        <p className="footer-note">SparkScout provides program information, not an eligibility determination or live local event listings. Review each organizer’s official information with a parent or guardian before making plans.</p>
       </main>
     </div>
   );
